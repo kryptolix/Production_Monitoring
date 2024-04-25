@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <title>FBS Monitoring</title>
+    <!-- refresh page after 60 seconds -->
+    <meta http-equiv="refresh" content="60">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+<div class="flex-parent-element stueckzahl">
+	<div class="flex-child-element title">Stückzahl: </div>
+	<div class="flex-child-element variable" id="stueckzahl">68231</div>
+</div>
+<div class="flex-parent-element wip">
+	<div class="flex-child-element title">WIP: </div>
+	<div class="flex-child-element variable" id="wip">4591</div>
+</div>
+<div class="flex-parent-element date">
+	<div class="flex-child-element title">Letzte Änderung: </div>
+	<div class="flex-child-element variable" id="date">2024-04-24 10:20</div>
+</div>
+<div id="wrapper">
+    <canvas id="canvas" width="400" height="150" ></canvas>
+</div>
+<script src="main.js"></script>
+</body>
+</html> 
